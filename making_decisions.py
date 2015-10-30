@@ -45,3 +45,17 @@ def is_friend(name):
 print is_friend("Diane")
 print is_friend("Ned")
 print is_friend("Arry")
+
+def biggest(a, b, c):
+	if a > b:
+		if a > c:
+			return a
+		if b > c:
+			return b
+		else:
+			return c
+
+print biggest(3, 6, 9)
+print biggest(9, 3, 6)
+print biggest(3, 3, 9)
+print biggest(9, 3, 9)
