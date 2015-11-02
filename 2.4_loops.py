@@ -52,3 +52,23 @@ def print_numbers(orig_num):
 		num += 1
 
 print_numbers(3)
+
+# Break Time!
+#
+# while <test expression>:
+#	<code>
+#	if <BreakTest>:
+#		break
+#	<more code>
+#
+# <post-while code>
+
+def print_numbers(orig_num):
+	num = 1
+	while True:
+		if num > orig_num:
+			break
+		print num
+		num += 1
+
+print_numbers(3)
