@@ -1,5 +1,5 @@
 # Lesson 2.4: Making Decisions - If Statements
-# Final Quiz
+# Final If Quiz
 
 def biggest(a, b, c):
 	if a >= b and a >= c:
