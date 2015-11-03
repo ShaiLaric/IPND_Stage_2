@@ -18,8 +18,6 @@
 # [] == empty list
 # [3] == 1-element list
 
-# Here's a chance to play around with lists for a bit before you continue
-# Take a look at what the following code does and try to guess how it works.
 
 '''print "EXAMPLE 1: Lists can contain strings"
 string_list = ['HTML', 'CSS', 'Python']
