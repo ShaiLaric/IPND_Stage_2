@@ -77,18 +77,18 @@ def play_game():
     game_paragraph, game_answers = set_texts()		# get difficulty; set appropriate game & answers
     current = 0
     print "\n" + game_paragraph
-    for element in fill_ins:						# loop through blanks
-        choice = get_input(current)					# ask for a guess
+    for element in fill_ins:											# loop through blanks
+        choice = get_input(current)								# ask for a guess
         while choice != game_answers[current]:		# if wrong, inform user & ask again
             print "Sorry, try again.\n" + game_paragraph	
             choice = get_input(current)
-        game_paragraph = game_paragraph.replace(element, choice)		# if right, put answer in game string
-        print "\n" + game_paragraph										# prepare for next guess
-        current += 1													# increment counter to move on
+        game_paragraph = game_paragraph.replace(element, choice)	# if right, put answer in game string
+        print "\n" + game_paragraph								# prepare for next guess
+        current += 1															# increment counter to move on
     finished = raw_input("\nGame over! Would you like to play again? ")	# allow another play
     if str(finished).lower() == "y" or str(finished).lower() == "yes":	# if yes, start over
         play_game()
-    return "Thanks for playing!"										# end game
+    return "Thanks for playing!"									# end game
 
 # Starts the game
 play_game()
